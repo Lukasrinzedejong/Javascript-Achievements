@@ -3,6 +3,7 @@
     let optellen = document.getElementById('optellen');
     let vermenigvuldigen = document.getElementById('vermenigvuldigen');
     let aftrekken = document.getElementById('aftrekken')
+    let delen = document.getElementById('delen')
     mijnButton.addEventListener('click', function(){
         // lees de waarden van de text input velden in 
         // let op DIT ZIJN STRINGS
@@ -15,6 +16,7 @@
         telOp(getal1,getal2);
         vermenigvuldig(getal1,getal2);
         trekAf(getal1,getal2);
+        deel(getal1,getal2);
     })
     function telOp(getal1, getal2){
         let antwoord = getal1 + getal2;// doe de bewerking
@@ -29,5 +31,10 @@
     function trekAf(getal1, getal2){
         let antwoord = getal1 - getal2;
         console.log("aftrekken " + antwoord); 
-        Aftrekken.innerHTML = antwoord; 
+        aftrekken.innerHTML = antwoord; 
+    }
+    function deel(getal1, getal2){
+        let antwoord = getal1 / getal2;
+        console.log("delen " + antwoord); 
+        delen.innerHTML = antwoord;
     }
